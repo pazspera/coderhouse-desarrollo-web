@@ -93,6 +93,10 @@ p, li {
     &--grande {
         padding: 1em 2em;
     }
+
+    &--ancho {
+        padding: 1em 5em;
+    }
 }
 
 
@@ -273,6 +277,36 @@ footer {
 	grid-row: span 2;
 }
 
+/*  Página Contacto */
+
+.formulario {
+
+    margin-bottom: 1em;
+    max-width: 500px;
+
+    &__label {
+        @extend %formato-titulos;
+        font-size: 1.25em;
+    }
+
+    &__input {
+        @extend %formato-texto;
+        width: 100%;
+        padding: .5em;
+        margin-top: .3em;
+    }
+
+    &__img {
+        height: 100vh;
+        background-image: url(../img/grupo_contacto.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-bottom: -0.3em;
+    }
+}
+
 
 /* Layout para mobile */
 @media (max-width:600px) {
@@ -364,6 +398,7 @@ footer {
             }
         }
     }
+
 }
 
 
@@ -378,5 +413,14 @@ footer {
     .destacado {
         margin: 0;
         margin-top: 15%;
+    }
+
+    /* Contacto: mueve img al lado derecho */
+    .formulario {
+        width: 40%;
+
+        &__img {
+            width: 60%;
+        }
     }
 }

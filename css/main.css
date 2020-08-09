@@ -30,13 +30,13 @@ img {
 }
 
 /* Tipografia */
-p, li {
+p, li, .formulario__input {
   font-family: "Nunito", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
 }
 
-h1, h2, .btn, .nav > .nav-header > .nav-title, .nav > .nav-links {
+h1, h2, .btn, .nav > .nav-header > .nav-title, .nav > .nav-links, .formulario__label {
   font-family: "Fjalla One", sans-serif;
 }
 
@@ -75,6 +75,10 @@ h2 {
 
 .btn--grande {
   padding: 1em 2em;
+}
+
+.btn--ancho {
+  padding: 1em 5em;
 }
 
 /*  Header, responsive nav bar */
@@ -264,6 +268,32 @@ footer {
   grid-row: span 2;
 }
 
+/*  Página Contacto */
+.formulario {
+  margin-bottom: 1em;
+  max-width: 500px;
+}
+
+.formulario__label {
+  font-size: 1.25em;
+}
+
+.formulario__input {
+  width: 100%;
+  padding: .5em;
+  margin-top: .3em;
+}
+
+.formulario__img {
+  height: 100vh;
+  background-image: url(../img/grupo_contacto.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: -0.3em;
+}
+
 /* Layout para mobile */
 @media (max-width: 600px) {
   /*  Menu hamburguesa para mobile */
@@ -370,6 +400,13 @@ footer {
   .destacado {
     margin: 0;
     margin-top: 15%;
+  }
+  /* Contacto: mueve img al lado derecho */
+  .formulario {
+    width: 40%;
+  }
+  .formulario__img {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
