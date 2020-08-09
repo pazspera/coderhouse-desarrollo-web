@@ -23,6 +23,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 /* Tipografia */
 .nav > .nav-header > .nav-title, .nav > .nav-links {
   font-family: "Fjalla One", sans-serif;
@@ -70,6 +74,16 @@ header {
 
 .nav > #nav-check {
   display: none;
+}
+
+/*  Home */
+.main-home {
+  height: calc(100vh - 50px);
+  background-image: url(../img/home2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*  Menu hamburguesa para mobile */
