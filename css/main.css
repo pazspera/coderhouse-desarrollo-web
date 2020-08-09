@@ -225,8 +225,8 @@ footer {
   grid-row: span 2;
 }
 
-/*  Menu hamburguesa para mobile */
 @media (max-width: 600px) {
+  /*  Menu hamburguesa para mobile */
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -271,6 +271,14 @@ footer {
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+  /*  Ajusta grid de fotos para mobile */
+  .horizontal {
+    grid-column: span 1;
+  }
+  .grande {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
 
