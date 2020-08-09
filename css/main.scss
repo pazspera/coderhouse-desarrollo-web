@@ -168,7 +168,7 @@ footer {
         color: $blanco;
         font-size: 2em;
         padding-left: .6em;
-        padding-top: .1em;
+        padding-top: .15em;
 
         &:hover {
             color: $color-secundario;
@@ -215,11 +215,11 @@ footer {
     }
 
     &__img {
-        max-width: 450px;
+        max-width: 335px;
+        margin: 0 auto;
     }
 
     &__texto {
-
         margin-top: 1.5em;
 
         &__titulo {
@@ -229,11 +229,9 @@ footer {
         &__temas {
             padding-left: 0;
             list-style-position: inside;
-
-            &__col {
-                margin-bottom: 1em;
-            }
+            margin-bottom: 1.5em;
         }
+        
     }
 
 }
@@ -340,14 +338,24 @@ footer {
         align-items: center;
         margin: 0 0 1.5em 0;
 
+        &__img {
+            width: 40%;
+        }
+
         &__texto {
-            margin-left: 2em;
+            padding-left: 2.5em;
             margin-top: 0;
+            width: 60%;
 
             &__temas {
                 display: flex;
                 justify-content: space-between;
                 padding-right: 4em;
+                margin-bottom: 0;
+
+                &__col {
+                    margin-bottom: 1.5em;
+                }
             }
         }
     }
