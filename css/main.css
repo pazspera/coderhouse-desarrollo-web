@@ -45,7 +45,7 @@ h1, h2, h3 {
 h2 {
   text-transform: uppercase;
   font-size: 2.45em;
-  margin-bottom: .5em;
+  margin-bottom: .4em;
 }
 
 /*  Botones */
@@ -53,7 +53,7 @@ h2 {
   font-size: 1.25em;
   background-color: #5B1865;
   color: #ffffff;
-  padding: .75em 2em;
+  padding: .75em 1.5em;
   text-decoration: none;
   display: inline-block;
   border: 2px solid #5B1865;
@@ -66,7 +66,7 @@ h2 {
 }
 
 .btn--grande {
-  padding: 1em 2.5em;
+  padding: 1em 2em;
 }
 
 /*  Header, responsive nav bar */
@@ -123,6 +123,40 @@ header {
   display: none;
 }
 
+/*  Footer */
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #0F110C;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.redes__iconos {
+  color: #ffffff;
+  font-size: 2em;
+  padding-left: .6em;
+  padding-top: .1em;
+}
+
+.redes__iconos:hover {
+  color: #FF9F1C;
+}
+
 /*  Home */
 .main-home {
   height: calc(100vh - 50px);
@@ -140,10 +174,11 @@ header {
   max-width: 500px;
   background-color: #F4F4F5;
   padding: 1.75em 2em;
+  border-radius: 5px;
 }
 
 .destacado__texto {
-  margin-bottom: 1em;
+  margin: 0.7em 0;
 }
 
 /*  Menu hamburguesa para mobile */

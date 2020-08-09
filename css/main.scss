@@ -55,7 +55,7 @@ h2 {
     @extend %formato-titulos;
     text-transform: uppercase;
     font-size: 2.45em;
-    margin-bottom: .5em;
+    margin-bottom: .4em;
 }
 
 p {
@@ -68,7 +68,7 @@ p {
     font-size: 1.25em;
     background-color: $color-principal;
     color: $blanco;
-    padding: .75em 2em;
+    padding: .75em 1.5em;
     text-decoration: none;
     display: inline-block;
     border: 2px solid $color-principal;
@@ -80,7 +80,7 @@ p {
     }
 
     &--grande {
-        padding: 1em 2.5em;
+        padding: 1em 2em;
     }
 }
 
@@ -141,6 +141,32 @@ header {
     display: none;
 }
   
+/*  Footer */
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: $color-footer;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__iconos {
+        color: $blanco;
+        font-size: 2em;
+        padding-left: .6em;
+        padding-top: .1em;
+
+        &:hover {
+            color: $color-secundario;
+        }
+    }
+}
+
+
 /*  Home */
 .main-home {
     height: calc(100vh - 50px);
@@ -158,9 +184,10 @@ header {
     max-width: 500px;
     background-color: $background-claro;
     padding: 1.75em 2em;
+    border-radius: 5px;
 
     &__texto {
-        margin-bottom: 1em;
+        margin: 0.7em 0;
     }
 }
 
