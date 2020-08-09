@@ -229,4 +229,19 @@ footer {
     overflow-y: auto;
   }
 }
+
+/*  Layout para desktop */
+@media (min-width: 1000px) {
+  /*  Footer: mueve iconos redes a la derecha */
+  .redes {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  /*  Home: cambia alineación del cuadro destacado */
+  .destacado {
+    margin: 0;
+    margin-top: 15%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
