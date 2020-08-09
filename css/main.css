@@ -15,12 +15,14 @@ html {
 
 body {
   margin: 0;
+  background-color: #F4F4F5;
 }
 
 .container {
   width: 90%;
   /* tamaño en mobile */
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 img {
@@ -28,7 +30,7 @@ img {
 }
 
 /* Tipografia */
-p {
+p, li {
   font-family: "Nunito", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
@@ -62,6 +64,7 @@ h2 {
   text-decoration: none;
   display: inline-block;
   border: 2px solid #5B1865;
+  margin-right: 2em;
 }
 
 .btn:hover {
@@ -90,7 +93,7 @@ header {
   display: inline-block;
   font-size: 1.56em;
   color: #ffffff;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .nav > .nav-header > .nav-title > a {
@@ -186,6 +189,42 @@ footer {
   margin: 0.7em 0;
 }
 
+/*  Página Discografía */
+.disco {
+  background-color: #ffffff;
+  padding: 2em;
+  margin: 1.5em auto;
+  max-width: 460px;
+  /* máximo para mobile */
+  border-radius: 10px;
+}
+
+.disco:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.disco__img {
+  max-width: 450px;
+}
+
+.disco__texto {
+  margin-top: 1.5em;
+}
+
+.disco__texto__titulo {
+  margin-top: 0;
+}
+
+.disco__texto__temas {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.disco__texto__temas__col {
+  margin-bottom: 1em;
+}
+
 /*  Página Fotos */
 .fotos {
   display: -ms-grid;
@@ -225,6 +264,7 @@ footer {
   grid-row: span 2;
 }
 
+/* Layout para mobile */
 @media (max-width: 600px) {
   /*  Menu hamburguesa para mobile */
   .nav > .nav-btn {
@@ -279,6 +319,34 @@ footer {
   .grande {
     grid-column: span 1;
     grid-row: span 1;
+  }
+}
+
+/*  Layout para tablet */
+@media (min-width: 800px) {
+  /*  Cambia diseño discos en la página Discografía*/
+  .disco {
+    max-width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 1.5em 0;
+  }
+  .disco__texto {
+    margin-left: 2em;
+    margin-top: 0;
+  }
+  .disco__texto__temas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 4em;
   }
 }
 
