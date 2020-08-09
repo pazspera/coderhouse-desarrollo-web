@@ -1,10 +1,14 @@
-/*  Colores */
+/*  Variables */
 $color-header: #0F110C;
 $color-footer: #0F110C;
 $blanco: #ffffff;
 $background-claro: #F4F4F5;
+$background-oscuro: #4E4E56;
 $color-principal: #5B1865;
 $color-secundario: #FF9F1C; 
+
+$fuente-titulos: 'Fjalla One', sans-serif;
+$fuente-texto: 'Nunito', sans-serif;
 
 /*  General */
 *,
@@ -26,11 +30,23 @@ body {
     margin: 0 auto;
 }
 
+/* Tipografia */
+
+%formato-texto {
+    font-family: $fuente-texto;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+%formato-titulos {
+    font-family: $fuente-titulos;
+}
+
 /*  Header, responsive nav bar */
 header {
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: $color-header;
     position: relative;
 }
   
@@ -39,10 +55,11 @@ header {
 }
   
 .nav > .nav-header > .nav-title {
+    @extend %formato-titulos;
     display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
+    font-size: 1.56em;
+    color: $blanco;
+    padding: 10px;
 }
   
 .nav > .nav-btn {
@@ -50,26 +67,30 @@ header {
 }
   
 .nav > .nav-links {
+    @extend %formato-titulos;
     display: inline;
     float: right;
-    font-size: 18px;
+    font-size: 1.25em;
 }
   
 .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: $blanco;
 }
   
 .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: $color-secundario;
 }
   
 .nav > #nav-check {
     display: none;
 }
   
+
+
+/*  Menu hamburguesa para mobile */
 @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -85,19 +106,19 @@ header {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: $background-oscuro;
     }
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid $blanco;
     }
     .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color:$color-header;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;

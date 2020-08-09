@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*  Colores */
+/*  Variables */
 /*  General */
 *,
 *::before,
@@ -23,11 +23,16 @@ body {
   margin: 0 auto;
 }
 
+/* Tipografia */
+.nav > .nav-header > .nav-title, .nav > .nav-links {
+  font-family: "Fjalla One", sans-serif;
+}
+
 /*  Header, responsive nav bar */
 header {
   height: 50px;
   width: 100%;
-  background-color: #4d4d4d;
+  background-color: #0F110C;
   position: relative;
 }
 
@@ -37,9 +42,9 @@ header {
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
+  font-size: 1.56em;
+  color: #ffffff;
+  padding: 10px;
 }
 
 .nav > .nav-btn {
@@ -49,24 +54,25 @@ header {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 1.25em;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #ffffff;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  color: #FF9F1C;
 }
 
 .nav > #nav-check {
   display: none;
 }
 
+/*  Menu hamburguesa para mobile */
 @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -82,19 +88,19 @@ header {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #4E4E56;
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #ffffff;
   }
   .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: #0F110C;
     height: 0px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
