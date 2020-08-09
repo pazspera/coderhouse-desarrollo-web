@@ -46,6 +46,44 @@ img {
     font-family: $fuente-titulos;
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    @extend %formato-titulos;
+    text-transform: uppercase;
+    font-size: 2.45em;
+    margin-bottom: .5em;
+}
+
+p {
+    @extend %formato-texto;
+}
+
+/*  Botones */
+.btn {
+    @extend %formato-titulos;
+    font-size: 1.25em;
+    background-color: $color-principal;
+    color: $blanco;
+    padding: .75em 2em;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid $color-principal;
+
+    &:hover {
+        color: $color-principal;
+        background-color: $blanco;
+        border: 2px solid $color-principal;
+    }
+
+    &--grande {
+        padding: 1em 2.5em;
+    }
+}
+
+
 /*  Header, responsive nav bar */
 header {
     height: 50px;
@@ -65,7 +103,17 @@ header {
     color: $blanco;
     padding: 10px;
 }
-  
+
+.nav > .nav-header > .nav-title > a {
+    color: $blanco;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-secundario;
+    }
+}
+
 .nav > .nav-btn {
     display: none;
 }
@@ -100,6 +148,19 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.destacado {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: $background-claro;
+    padding: 1.75em 2em;
+
+    &__texto {
+        margin-bottom: 1em;
+    }
+
 }
 
 

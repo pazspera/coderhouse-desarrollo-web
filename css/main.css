@@ -28,8 +28,45 @@ img {
 }
 
 /* Tipografia */
-.nav > .nav-header > .nav-title, .nav > .nav-links {
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h2, .btn, .nav > .nav-header > .nav-title, .nav > .nav-links {
   font-family: "Fjalla One", sans-serif;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.45em;
+  margin-bottom: .5em;
+}
+
+/*  Botones */
+.btn {
+  font-size: 1.25em;
+  background-color: #5B1865;
+  color: #ffffff;
+  padding: .75em 2em;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #5B1865;
+}
+
+.btn:hover {
+  color: #5B1865;
+  background-color: #ffffff;
+  border: 2px solid #5B1865;
+}
+
+.btn--grande {
+  padding: 1em 2.5em;
 }
 
 /*  Header, responsive nav bar */
@@ -49,6 +86,16 @@ header {
   font-size: 1.56em;
   color: #ffffff;
   padding: 10px;
+}
+
+.nav > .nav-header > .nav-title > a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav > .nav-header > .nav-title > a:hover {
+  color: #FF9F1C;
 }
 
 .nav > .nav-btn {
@@ -84,6 +131,18 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.destacado {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #F4F4F5;
+  padding: 1.75em 2em;
+}
+
+.destacado__texto {
+  margin-bottom: 1em;
 }
 
 /*  Menu hamburguesa para mobile */
