@@ -34,12 +34,17 @@ p {
   font-weight: 400;
 }
 
-h2, .btn, .nav > .nav-header > .nav-title, .nav > .nav-links {
+h1, h2, .btn, .nav > .nav-header > .nav-title, .nav > .nav-links {
   font-family: "Fjalla One", sans-serif;
 }
 
 h1, h2, h3 {
   margin-top: 0;
+}
+
+h1 {
+  font-size: 3.05em;
+  margin-top: 0.75em;
 }
 
 h2 {
@@ -157,7 +162,7 @@ footer {
   color: #FF9F1C;
 }
 
-/*  Home */
+/*  Página Home */
 .main-home {
   height: calc(100vh - 50px);
   background-image: url(../img/home2.jpg);
@@ -179,6 +184,45 @@ footer {
 
 .destacado__texto {
   margin: 0.7em 0;
+}
+
+/*  Página Fotos */
+.fotos {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 6px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  margin-bottom: 1.5em;
+}
+
+.fotos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotos div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.grande {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 /*  Menu hamburguesa para mobile */
