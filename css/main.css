@@ -82,7 +82,9 @@ header {
   height: 50px;
   width: 100%;
   background-color: #0F110C;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav > .nav-header {
@@ -168,7 +170,7 @@ footer {
 /*  Página Home */
 .main-home {
   height: calc(100vh - 50px);
-  background-image: url(../img/home2.jpg);
+  background-image: url(../img/home3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
