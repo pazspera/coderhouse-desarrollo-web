@@ -30,6 +30,7 @@ body {
     margin: 0 auto;
 }
 
+
 img {
     width: 100%;
 }
@@ -148,10 +149,11 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    padding: 4em 0;
 }
 
 .destacado {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     max-width: 500px;
     background-color: $background-claro;
@@ -160,7 +162,6 @@ header {
     &__texto {
         margin-bottom: 1em;
     }
-
 }
 
 

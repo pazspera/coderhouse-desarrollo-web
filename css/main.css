@@ -131,10 +131,11 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding: 4em 0;
 }
 
 .destacado {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   max-width: 500px;
   background-color: #F4F4F5;
