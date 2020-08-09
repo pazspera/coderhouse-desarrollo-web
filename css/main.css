@@ -64,10 +64,10 @@ h2 {
   text-decoration: none;
   display: inline-block;
   border: 2px solid #5B1865;
-  margin-right: 2em;
+  margin: 0 2em 1em 0;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   color: #5B1865;
   background-color: #ffffff;
   border: 2px solid #5B1865;
@@ -104,7 +104,7 @@ header {
   text-transform: uppercase;
 }
 
-.nav > .nav-header > .nav-title > a:hover {
+.nav > .nav-header > .nav-title > a:hover, .nav > .nav-header > .nav-title > a:focus {
   color: #FF9F1C;
 }
 
@@ -125,7 +125,7 @@ header {
   color: #ffffff;
 }
 
-.nav > .nav-links > a:hover {
+.nav > .nav-links > a:hover, a:focus {
   color: #FF9F1C;
 }
 
@@ -163,7 +163,7 @@ footer {
   padding-top: .15em;
 }
 
-.redes__iconos:hover {
+.redes__iconos:hover, .redes__iconos:focus {
   color: #FF9F1C;
 }
 
@@ -201,7 +201,7 @@ footer {
   border-radius: 10px;
 }
 
-.disco:hover {
+.disco:hover, .disco:focus {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -326,7 +326,7 @@ footer {
 @media (min-width: 800px) {
   /*  Cambia diseño discos en la página Discografía*/
   .disco {
-    max-width: 1000px;
+    max-width: 1100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,7 +350,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-right: 4em;
+    padding-right: 3em;
     margin-bottom: 0;
   }
   .disco__texto__temas__col {
