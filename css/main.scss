@@ -32,6 +32,9 @@ body {
     max-width: 1100px;
 }
 
+.d-flex {
+    display: flex;
+}
 
 img {
     width: 100%;
@@ -324,9 +327,12 @@ footer {
 .recital {
     @extend %estilo-cards;
     max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__texto {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.3em;
         
         &__titulo {
             margin-bottom: 0.5em;
@@ -335,6 +341,9 @@ footer {
 
     &__img {
         margin-bottom: 1em;
+        img {
+            max-height: 390px;
+        }
     }
 }
 
