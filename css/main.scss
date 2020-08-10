@@ -4,6 +4,7 @@ $color-footer: #0F110C;
 $blanco: #ffffff;
 $background-claro: #F4F4F5;
 $background-oscuro: #4E4E56;
+$btn-desactivado: #898994;
 $color-principal: #5B1865;
 $color-secundario: #FF9F1C; 
 
@@ -105,6 +106,7 @@ p, li {
     display: inline-block;
     border: 2px solid $color-principal;
     margin: 0 2em 1em 0;
+    text-align: center;
 
     &:hover, 
     &:focus {
@@ -121,6 +123,21 @@ p, li {
     &--ancho {
         padding: 1em 5em;
     }
+
+    &--desactivado {
+        background-color: $btn-desactivado;
+        cursor: auto;
+        border: 2px solid $btn-desactivado;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-desactivado;
+            cursor: auto;
+            border: 2px solid $btn-desactivado;
+            color: $blanco;
+        }
+    }
+
 }
 
 
@@ -409,7 +426,7 @@ footer {
 
 
 /*  Layout para tablet */
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     /*  Cambia diseño discos en la página Discografía*/
     .disco {
         max-width: 1100px;
@@ -437,6 +454,13 @@ footer {
                 }
             }
         }
+    }
+
+    /*  Alinea en filas flyers en la página En vivo*/
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-auto-flow: dense;
     }
 
 }
