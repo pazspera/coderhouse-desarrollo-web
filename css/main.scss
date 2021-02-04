@@ -149,6 +149,7 @@ header {
     background-color: $color-header;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
   
 .nav > .nav-header {
@@ -262,6 +263,8 @@ footer {
 .disco {
     @extend %estilo-cards;
     max-width: 460px;  /* máximo para mobile */
+
+    z-index: -1;
 
     &__img {
         max-width: 335px;

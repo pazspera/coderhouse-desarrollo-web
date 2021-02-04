@@ -129,6 +129,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav > .nav-header {
@@ -243,6 +244,7 @@ footer {
 .disco {
   max-width: 460px;
   /* máximo para mobile */
+  z-index: -1;
 }
 
 .disco__img {
