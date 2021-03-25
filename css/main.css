@@ -514,4 +514,9 @@ footer {
     margin-left: auto;
   }
 }
+
+/* Agregar margin a main*/
+main {
+  margin-bottom: 3rem;
+}
 /*# sourceMappingURL=main.css.map */
