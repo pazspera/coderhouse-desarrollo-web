@@ -49,7 +49,7 @@
         <div class="container">
             <h1>Discografía</h1>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__bounce">
                 <div class="disco__img">
                     <img src="../img/discos/chica_rutera.jpg" alt="tapa sencillo chica rutera">
                 </div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__bounce">
                 <div class="disco__img">
                     <img src="../img/discos/aire.jpg" alt="tapa sencillo aire">
                 </div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__bounce">
                 <div class="disco__img">
                     <img src="../img/discos/boom_boom_kid.jpg" alt="tapa sencillo poseidotica habla con boom boom kid">
                 </div>
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/era_instante.jpg" alt="tapa sencillo la era del instante">
                 </div>
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/reconstruccion.jpg" alt="tapa sencillo reconstruccion">
                 </div>
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/rebelion_zombie.jpg" alt="tapa disco rebelion zombie">
                 </div>
@@ -169,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/pascuas_profanas.jpg" alt="tapa disco pascuas profanas">
                 </div>
@@ -204,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/dilema_origen.jpg" alt="tapa disco el dilema del origen">
                 </div>
@@ -235,7 +235,7 @@
                 </div>
             </div>
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/cronicas_futuro.jpg" alt="tapa disco crónicas del futuro">
                 </div>
@@ -264,8 +264,7 @@
                 </div>
             </div>
 
-
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/la_distancia.jpg" alt="tapa disco la distancia">
                 </div>
@@ -293,7 +292,7 @@
                 </div>
             </div>    
 
-            <div class="disco">
+            <div class="disco wow animate__animated animate__fadeIn">
                 <div class="disco__img">
                     <img src="../img/discos/intramundo.jpg" alt="tapa disco intramundo">
                 </div>
@@ -341,7 +340,16 @@
     <!-- Wow.js -->
     <script src="../js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        wow = new WOW(
+            {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       200,          // default
+            mobile:       true,       // default
+            live:         true        // default
+            }
+        )
+        wow.init();
     </script>
 </body>
 </html>

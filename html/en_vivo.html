@@ -50,7 +50,7 @@
             <h1>En vivo</h1>
 
                 <div class="grid">
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_12_14.jpg" alt="poseidotica en centro cultural richards">
                         </div>
@@ -61,7 +61,7 @@
                         <a href="#" class="btn">Entradas disponibles</a>
                     </div>
 
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_12_13.jpg" alt="argentina tour 2019">
                         </div>
@@ -72,7 +72,7 @@
                         <a href="#" class="btn">Entradas disponibles</a>
                     </div>
 
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_10_05.jpg" alt="festival viaje de agua iv">
                         </div>
@@ -81,9 +81,9 @@
                             <p>Centro Cultural Konex (CABA)</p>
                         </div>
                         <a href="#" class="btn btn--desactivado">Evento finalizado</a>
-                    </div>
+                    </div>     
  
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn" data-wow-delay="5s">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_08_23.jpg" alt="poseidotica tour chile">
                         </div>
@@ -94,7 +94,7 @@
                         <a href="#" class="btn btn--desactivado">Evento finalizado</a>
                     </div>
 
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn" data-wow-delay="5s">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_08_20.jpg" alt="recital viaje de agua uruguay">
                         </div>
@@ -105,7 +105,7 @@
                         <a href="#" class="btn btn--desactivado">Evento finalizado</a>
                     </div>
 
-                    <div class="recital">
+                    <div class="recital wow animate__animated animate__fadeIn" data-wow-delay="5s">
                         <div class="recital__img">
                             <img src="../img/flyers/flyer_06_29.jpg" alt="poseidotica en san antonio de padua">
                         </div>
@@ -136,7 +136,16 @@
     <!-- Wow.js -->
     <script src="../js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       100,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
     </script>
 </body>
 </html>
